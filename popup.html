@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html {
+        width: 300px;
+        height: 300px;
+      }
+
+      body {
+        background-color: #fff;
+      }
+
+      #logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+
+      #loading {
+        text-align: center;
+        margin: 10px auto;
+        font-size: 13px;
+      }
+
+      #info {
+        width: 100%;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      table th {
+        text-align: left;
+        padding: 3px;
+      }
+
+      table td {
+        text-align: right;
+        padding: 3px;
+      }
+
+      #info-ipAddress {
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="logo">
+      <img src="images/icon.png" alt="Icon" width="60" height="60" />
+    </div>
+    <div id="loading">Please Wait...</div>
+    <div id="info" style="display: none">
+      <table>
+        <tr>
+          <th>IP Version</th>
+          <td id="info-ipVersion"></td>
+        </tr>
+        <tr>
+          <th>IP Address</th>
+          <td id="info-ipAddress"></td>
+        </tr>
+        <tr>
+          <th>Latitude</th>
+          <td id="info-latitude"></td>
+        </tr>
+        <tr>
+          <th>Longitude</th>
+          <td id="info-longitude"></td>
+        </tr>
+        <tr>
+          <th>Country Name</th>
+          <td id="info-countryName"></td>
+        </tr>
+        <tr>
+          <th>Country Code</th>
+          <td id="info-countryCode"></td>
+        </tr>
+        <tr>
+          <th>Time Zone</th>
+          <td id="info-timeZone"></td>
+        </tr>
+        <tr>
+          <th>Cip Code</th>
+          <td id="info-zipCode"></td>
+        </tr>
+        <tr>
+          <th>City Name</th>
+          <td id="info-cityName"></td>
+        </tr>
+        <tr>
+          <th>Region Name</th>
+          <td id="info-regionName"></td>
+        </tr>
+      </table>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

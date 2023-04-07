@@ -1,0 +1,23 @@
+{
+  "version": "1.0.1",
+  "manifest_version": 3,
+  "name": "MyIPAddress",
+  "permissions": ["webRequest"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/icon-16x16.png",
+    "24": "images/icon-24x24.png",
+    "32": "images/icon-32x32.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/icon-16x16.png",
+      "24": "images/icon-24x24.png",
+      "32": "images/icon-32x32.png"
+    },
+    "default_title": "Click Me",
+    "default_popup": "popup.html"
+  }
+}
